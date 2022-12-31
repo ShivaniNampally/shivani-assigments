@@ -1,0 +1,95 @@
+//Charater at the given index
+public class Charofstring {
+
+	public static void main(String[] args) {
+		String name = "shivani";
+		System.out.println(name.charAt(1));
+	}
+
+}
+output:h
+
+
+//to convert all words first letter into captial
+public class Touppercasestring {
+	public static void main(String[] args) {
+		String s = "java is object oriented programming languages";
+		String[] arr = s.split(" ");
+		for (int i = 0; i < arr.length; i++) {
+			char c = arr[i].charAt(0);
+			String c1 = String.valueOf(c).toUpperCase();
+			String sub = arr[i].substring(1);
+			System.out.print(c1 + sub + " ");
+		}
+	}
+}
+output:Java Is Object Oriented Programming Language
+
+
+//match()
+public class Matchstring {
+	public static void main(String[] args) {
+		String a = "Shivani";
+		String b = "shivani";
+		System.out.println(a.matches(b));
+	}
+
+}
+output:false
+
+
+//ends with
+public class Endsstring {
+	public static void main(String[] args) {
+		String s = "shivani";
+		String b = "vani";
+		System.out.println(s.endsWith(b));
+	}
+}
+output:true
+
+
+//no of words
+public class NowordsString {
+	public static void main(String[] args) {
+		String s="java is oops concept";
+		System.out.println(s.length());
+	}
+
+}
+output:20
+
+
+
+//captial letters
+public class UppercaseString {
+	public static void main(String[] args) {
+		String s = "sun rises in the east";
+		System.out.println(s.toUpperCase());
+
+	}
+}
+output:SUN RISES IN THE EAST
+
+
+//capital letter
+public class MidlettercapString {
+public static void main(String[] args) {
+	String s="A V College";
+	 System.out.println(s.replace("ll","lL" ));
+
+
+  }
+}
+output:A V ColLege
+
+
+//capital letter
+public class Capital {
+	public static void main(String[] args) {
+		String s="b.v.raju college";
+		System.out.println(s.replace("raju","RAJU"));
+	}
+
+}
+output:b.v.RAJU college
